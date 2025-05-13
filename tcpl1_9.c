@@ -9,16 +9,7 @@ int main(void)
 
     while ((c = getchar()) != EOF)
     {
-        if (c == ' ') {
-            if (!last_space) { // 只有上一个不是空格时才输出
-                putchar(' ');
-                last_space = 1;
-            }
-            // 如果上一个是空格，不输出，继续循环
-        } else {
-            putchar(c);
-            last_space = 0; // 只要不是空格，标志清零
-        }
+
     }
     return 0;
 }
