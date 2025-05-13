@@ -4,11 +4,18 @@
 #include <stdio.h>
 int main(void)
 {
-    long nc = 0;
-    while (getchar() != EOF)
+    int c, nc1, nc2, nc3;
+    nb = nt = nl = 0;
+
+    while ((c= getchar()) != EOF)
     {
-        nc++;
+        if (c == '\n')
+            ++n1;
+        else if (c == '\t')
+            ++nt;
+        else if (c == ' ')
+            ++nb;
     }
-    printf("%ld\n", nc);
-    return 0;
+    printf("%d %d %d\n", nc1, nc2, nc3);
+
 }
