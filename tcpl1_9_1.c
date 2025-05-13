@@ -6,7 +6,7 @@
 int main(void)
 {
     int c;
-    int lastc = LASTC; // 标志：上一个字符是否是空格
+    int lastc = LASTC; // 标志：上一个字符是否是空格测试
 
     while ((c = getchar()) != EOF)
     {
